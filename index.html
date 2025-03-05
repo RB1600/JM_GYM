@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JM Gym</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="/logojm1.jpg" type="bgimg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./img/logojm1.jpg" alt="JM Gym Logo" />
+          JM Gym
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to JM Gym</h1>
+        <p>Transform your fitness journey with us.</p>
+        <a href="#membership" class="cta-button">Join Now</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        JM Gym is dedicated to helping you achieve your fitness goals with
+        top-notch facilities and expert trainers.
+      </p>
+    </section>
+
+    <section id="membership" class="membership">
+      <h2>Membership Plans</h2>
+      <div class="membership-content">
+        <div class="plan">
+          <h3>Basic Plan</h3>
+          <p>2000k/month</p>
+          <a href="#signup" class="cta-button">Get Started</a>
+        </div>
+        <div class="plan">
+          <h3>Standard Plan</h3>
+          <p>5000k/month</p>
+          <a href="#signup" class="cta-button">Get Started</a>
+        </div>
+        <div class="plan">
+          <h3>Premium Plan</h3>
+          <p>20000k/month</p>
+          <a href="#signup" class="cta-button">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-content">
+        <img src="./img/gym1.jpg" alt="Gym Image 1" />
+        <img src="./img/gym2.jpg" alt="Gym Image 2" />
+        <img src="./img/gym3.jpg" alt="Gym Image 3" />
+        <img src="./img/gym4.jpg" alt="Gym Image 4" />
+        <img src="./img/gym5.jpg" alt="Gym Image 5" />
+        <img src="./img/gym6.jpg" alt="Gym Image 6" />
+        <img src="./img/gym7.jpg" alt="Gym Image 7" />
+        <img src="./img/gym8.jpg" alt="Gym Image 8" />
+        <img src="./img/gym1.jpg" alt="Gym Image 9">
+      </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="login-section">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+          
+          <button type="button" id="login-btn">Login</button>
+          <p><a href="#">Forgot Password?</a></p>
+          <p>Don't have an account? <a href="#signup">Sign Up</a></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+      <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <label for="new-name">Full Name:</label>
+          <input type="text" id="new-name" required />
+          
+          <label for="new-email">Email:</label>
+          <input type="email" id="new-email" required />
+          
+          <label for="new-username">Username:</label>
+          <input type="text" id="new-username" required />
+          
+          <label for="new-password">Password:</label>
+          <input type="password" id="new-password" required />
+          
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" required />
+          
+          <button type="button" id="signup-btn">Sign Up</button>
+          <p>Already have an account? <a href="#login">Login</a></p>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
